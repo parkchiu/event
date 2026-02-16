@@ -16,7 +16,7 @@ body{
   display:flex;
   justify-content:center;
   align-items:flex-end;
-  padding-bottom:10vh; 
+  padding-bottom:14vh; 
   padding:24px;
   overflow:hidden;
 
@@ -24,7 +24,7 @@ body{
     linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)),
     url("01.jpg");
   background-size:cover;
-  background-position:center 25%;
+  background-position:center 20%;
   background-repeat:no-repeat;
   transition: background-image .5s ease;
 
@@ -139,7 +139,7 @@ h1{
       h.className="heart";
       h.textContent="❤️";
       h.style.left = (Math.random()*window.innerWidth) + "px";
-      h.style.top  = window.innerHeight + "px";
+      h.style.top = (window.innerHeight - Math.random()*100) + "px";
       document.body.appendChild(h);
       setTimeout(()=>h.remove(), 2800);
     }
